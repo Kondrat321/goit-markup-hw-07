@@ -141,6 +141,14 @@
     margin-right: 8px;
     margin-left: 12px;
     } 
+    .agree:checked + &::before{
+    border: none;
+    background-color: var(--accent-color);
+    background-image: url("../images/icon-accept.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    }
 }
 .accept{
     color: var(--accent-color);
@@ -163,14 +171,7 @@
     box-shadow: 0px 4px 4px 0px #00000026;
 }
 }
-.agree:checked + .content-radio-btn::before{
-    border: none;
-    background-color: var(--accent-color);
-    background-image: url("../images/icon-accept.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 2px;
-}
+
 .visually-hidden{
     position: absolute;
     width: 1px;
