@@ -2,7 +2,6 @@
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: #F5F4FA;
-    padding-bottom: 94px;
 }
 .employees{
     display: flex;
@@ -19,14 +18,11 @@
     background-color:#FFFFFF;
 }
 .social-list{
-    display: flex;
-    justify-content: center;
+    @extend %flex;
     gap: 10px;
 }
 .social-list-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     width: 44px;
     height: 44px;
     border-radius: 50%;

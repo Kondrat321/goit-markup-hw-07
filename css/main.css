@@ -57,7 +57,7 @@ ul {
   gap: 50px;
 }
 
-.site-nav .link {
+.site-nav .site-nav__link {
   color: var(--primary-text-color);
   font-size: 14px;
   font-weight: 500;
@@ -66,10 +66,10 @@ ul {
   position: relative;
 }
 
-.link.curent {
+.site-nav__link.curent {
   color: var(--accent-color);
 }
-.link.curent:after {
+.site-nav__link.curent:after {
   position: absolute;
   content: "";
   display: block;
@@ -81,12 +81,12 @@ ul {
   border-radius: 2px;
 }
 
-.link {
+.site-nav__link {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link:hover, .link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
 
@@ -101,8 +101,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   margin-left: auto;
-  display: flex;
-  align-items: center;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -117,8 +115,6 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -144,11 +140,6 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.page-header-container {
-  display: flex;
-  align-items: center;
 }
 
 .page-header-contacts {
@@ -253,9 +244,6 @@ ul {
 }
 
 .section-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
@@ -304,7 +292,6 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #F5F4FA;
-  padding-bottom: 94px;
 }
 
 .employees {
@@ -325,15 +312,10 @@ ul {
 }
 
 .social-list {
-  display: flex;
-  justify-content: center;
   gap: 10px;
 }
 
 .social-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -362,16 +344,11 @@ ul {
 }
 
 .partners-list {
-  display: flex;
-  justify-content: center;
   gap: 30px;
   margin-top: 50px;
 }
 
 .partner-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 170px;
   height: 92px;
   border: rgb(175, 177, 184);
@@ -415,8 +392,6 @@ ul {
 }
 
 .filter {
-  display: flex;
-  justify-content: center;
   margin-bottom: 50px;
   gap: 8px;
 }
@@ -583,16 +558,11 @@ address {
 }
 
 .footer-social-list {
-  display: flex;
-  justify-content: center;
   gap: 10px;
   margin-top: 20px;
 }
 
 .footer-social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -632,9 +602,6 @@ address {
 }
 
 .subscribe-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 200px;
   height: 50px;
   background: #2196F3;
@@ -691,9 +658,6 @@ address {
   width: 30px;
   height: 30px;
   background-color: #FFFFFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   position: absolute;
@@ -848,4 +812,20 @@ address {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.social-list, .partners-list, .filter, .footer-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.section-icons, .social-list-link, .partner-list-link, .footer-social-link, .subscribe-btn, .modal-close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail, .phone, .page-header-container {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

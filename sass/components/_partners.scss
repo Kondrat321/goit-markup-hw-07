@@ -3,15 +3,12 @@
     padding-bottom: 94px;
 }
 .partners-list{
-    display: flex;
-    justify-content: center;
+    @extend %flex;
     gap: 30px;
     margin-top: 50px;
 }
 .partner-list-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     width: 170px;
     height: 92px;
     border:rgba(175, 177, 184, 1);
@@ -38,16 +35,12 @@
 
 .title-list{
     color: var(--primary-text-color);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.19;
+    @include font(16px, 500, 18.75px);
     letter-spacing: 0.03em;
     margin-bottom: 10px;
 }
 .content-list{
     color: var(--secondary-text-color);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.19;
+    @include font(16px, 18.75px);
     letter-spacing: 0.03em;
 }

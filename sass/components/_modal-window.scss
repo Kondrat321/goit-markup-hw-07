@@ -31,9 +31,7 @@
     width: 30px;
     height: 30px;
     background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     position: absolute;
@@ -42,17 +40,13 @@
 }
 .form-field{
     font-family: Roboto;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
+    @include font(12px, 14.06px);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 1);
 }
 .modal-title{
     font-family: Roboto;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.15;
+    @include font(20px, 700, 23.44px);
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 12px;
@@ -104,9 +98,7 @@
     padding-right: 16px;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
+    @include font(12px, 14,06px);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
     resize: none;
@@ -114,9 +106,7 @@
 .form-label{
     color: #757575;
     font-family: Roboto;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
+    @include font(12px, 14,06px);
     letter-spacing: 0.01em;
     margin-top: 10px;
     border: #000000;
@@ -125,9 +115,7 @@
     display: flex;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font();
     letter-spacing: 0.03em;
     &:before{
     border: 1.75px solid #212121;

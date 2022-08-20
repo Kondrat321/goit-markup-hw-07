@@ -26,9 +26,7 @@
 }
 .hero-title{
     color: #FFFFFF;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
+    @include font(44px, 900, 60px);
     letter-spacing: 0.06em;
     text-align: center;
     margin-bottom: 30px;
