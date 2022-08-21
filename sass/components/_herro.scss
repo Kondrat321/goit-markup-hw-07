@@ -24,12 +24,12 @@
     margin-left: auto;
     margin-right: auto;
 }
-.container__hero{
+.container-hero{
     color: #FFFFFF;
-    @include font(44px, 900, 60px);
-    // font-size: 44px;
-    // font-weight: 900;
-    // line-height: 1.36;
+    // @include font(44px, 900, 60px);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
     margin-bottom: 30px;

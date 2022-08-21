@@ -18,7 +18,7 @@ footer{
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer-contacts{
+.address__contacts{
     font-style: normal;
     color: #FFFFFF;
     // @include font();
@@ -40,7 +40,7 @@ footer{
     text-align: left;
     color: rgba(255, 255, 255, 1);
 }
-.footer-margin{
+.address__margin{
     margin-bottom: 9px;
 }
 // Contacts//
@@ -61,7 +61,7 @@ address{
   gap: 10px;
   margin-top: 20px;
 }
-.footer-social-link{
+.footer-social-list__footer-social-link{
     @extend %align;
     width: 44px;
     height: 44px;
@@ -73,7 +73,7 @@ address{
     background-color: var(--accent-color);
 }
 }
-.footer-social-icon{
+.footer-social-list_footer-social-link_icon{
     fill: #FFFFFF;
 }
 
@@ -83,7 +83,7 @@ address{
     height: 86px;
     margin-left: 73px; 
 }
-.form-subscribe{
+.subscribe__form{
     padding-left: 16px;
     box-sizing: border-box;
     width: 358px;
@@ -99,7 +99,7 @@ address{
     gap: 12px;
     margin-top: 20px;
     }
-.subscribe-btn{
+.subscribe__btn{
     @extend %align;
     width: 200px;
     height: 50px;
@@ -115,7 +115,7 @@ address{
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
-.send-icon{
+.subscribe__icon{
     fill: rgba(255, 255, 255, 1);
     margin-left: 10px;
 }
