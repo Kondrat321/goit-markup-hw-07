@@ -5,7 +5,10 @@
 .logo-footer{
     color: var(--accent-color);
     font-family: var(--secondary-font);
-    @include font(26px, 30.52px);
+    // @include font(26px, 30.52px);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     display: block;
     margin-bottom: 20px;
@@ -18,7 +21,10 @@ footer{
 .footer-contacts{
     font-style: normal;
     color: #FFFFFF;
-    @include font();
+    // @include font();
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
     letter-spacing: 0.03em;
 }
 .footer-top{
@@ -26,7 +32,10 @@ footer{
 }
 .footer-title{
     font-family: Roboto;
-    @include font(14px, 700, 16,41px);
+    // @include font(14px, 700, 16,41px);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: left;
     color: rgba(255, 255, 255, 1);
@@ -99,7 +108,10 @@ address{
     border-radius: 4px;
     border: none;
     font-family: Roboto;
-    @include font(16px, 700, 30px);
+    // @include font(16px, 700, 30px);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }

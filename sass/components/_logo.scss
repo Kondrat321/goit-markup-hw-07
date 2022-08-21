@@ -1,7 +1,10 @@
 .page-nav__logo{
     color: var(--accent-color);
     font-family: var(--secondary-font);
-    @include font(26px, 700, 30.52px);
+    // @include font(26px, 700, 30.52px);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.17;
     letter-spacing: 0.03em; 
     margin-right: 93px;
 }
